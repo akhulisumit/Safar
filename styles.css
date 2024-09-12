@@ -241,4 +241,62 @@
       width: 100%;
       margin: 10px 0;
     }
-  }
+  
+}
+
+.planner-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: var(--bg-light);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.planner-container h1 {
+    color: var(--primary-dark);
+    margin-bottom: 10px;
+}
+
+.planner-container p {
+    color: var(--neutral-dark);
+    margin-bottom: 20px;
+}
+
+.planner-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: var(--primary-dark);
+}
+
+.form-group select,
+.form-group input {
+    padding: 10px;
+    border: 1px solid var(--neutral);
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group select:focus,
+.form-group input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 5px rgba(3, 169, 244, 0.5);
+}
+
+.planner-form .btn {
+    align-self: center;
+    margin-top: 10px;
+}
